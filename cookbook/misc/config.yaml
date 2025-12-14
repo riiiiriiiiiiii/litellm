@@ -48,6 +48,11 @@ model_list:
       model: openai/fake
       api_key: fake-key
       api_base: https://exampleopenaiendpoint-production.up.railway.app/
+  - model_name: gpt-5.2-chat-latest
+    litellm_params:
+      model: gpt-5.2-chat-latest
+      api_base: https://api.openai.com/v1
+      api_key: os.environ/OPENAI_API_KEY
 
 litellm_settings:
   drop_params: True
